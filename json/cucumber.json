@@ -1,0 +1,224 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 304691269479,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to login page",
+            "match": {
+              "location": "loginDefinitionTestSuite.i_go_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 60731230535,
+              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 30 seconds. Element not found\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027LAPTOP-QPURT33B\u0027, ip: \u0027192.168.1.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_74\u0027\nDriver info: driver.version: unknown\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:151)\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:103)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy23.sendKeys(Unknown Source)\r\n\tat goodJob.pages.loginPage.enterEmail(loginPage.java:38)\r\n\tat goodJob.steps.loginStep.input_username(loginStep.java:16)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$input_username$5(\u003cgenerated\u003e)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.input_username(\u003cgenerated\u003e)\r\n\tat goodJob.loginDefinitionTestSuite.i_input_user_name_is(loginDefinitionTestSuite.java:24)\r\n\tat ✽.When I input user name is \"admin@yopmail.com\"(features/UserAction.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I input user name is \"admin@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yopmail.com",
+                  "offset": 22
+                }
+              ],
+              "location": "loginDefinitionTestSuite.i_input_user_name_is(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I input password is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 21
+                }
+              ],
+              "location": "loginDefinitionTestSuite.i_input_password_is(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I click on Login button",
+            "match": {
+              "location": "loginDefinitionTestSuite.I_click_on_Login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Access Company detail",
+        "description": "",
+        "id": "admin-do-some-thing;access-company-detail",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Open company is company",
+            "match": {
+              "location": "loginDefinitionTestSuite.open_company_is_company()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Show me \"SCORING DETAILS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SCORING DETAILS",
+                  "offset": 9
+                }
+              ],
+              "location": "loginDefinitionTestSuite.show_me_ADDITIONAL_INFORMATION(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 302604001995,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to login page",
+            "match": {
+              "location": "loginDefinitionTestSuite.i_go_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 60606482304,
+              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 30 seconds. Element not found\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027LAPTOP-QPURT33B\u0027, ip: \u0027192.168.1.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_74\u0027\nDriver info: driver.version: unknown\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:151)\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:103)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy23.sendKeys(Unknown Source)\r\n\tat goodJob.pages.loginPage.enterEmail(loginPage.java:38)\r\n\tat goodJob.steps.loginStep.input_username(loginStep.java:16)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$input_username$5(\u003cgenerated\u003e)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.input_username(\u003cgenerated\u003e)\r\n\tat goodJob.loginDefinitionTestSuite.i_input_user_name_is(loginDefinitionTestSuite.java:24)\r\n\tat ✽.When I input user name is \"admin@yopmail.com\"(features/UserAction.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I input user name is \"admin@yopmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yopmail.com",
+                  "offset": 22
+                }
+              ],
+              "location": "loginDefinitionTestSuite.i_input_user_name_is(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I input password is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 21
+                }
+              ],
+              "location": "loginDefinitionTestSuite.i_input_password_is(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I click on Login button",
+            "match": {
+              "location": "loginDefinitionTestSuite.I_click_on_Login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Download screen",
+        "description": "",
+        "id": "admin-do-some-thing;download-screen",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Clicking on Download button",
+            "match": {
+              "location": "loginDefinitionTestSuite.clicking_on_Download_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Open Test Download 50k",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 19
+                }
+              ],
+              "location": "loginDefinitionTestSuite.open_Test_Download_k(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Admin do some thing",
+    "description": "",
+    "id": "admin-do-some-thing",
+    "keyword": "Feature",
+    "uri": "features/UserAction.feature"
+  }
+]

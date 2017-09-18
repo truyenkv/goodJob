@@ -38,5 +38,35 @@ public class loginDefinitionTestSuite {
 	public void show_me_message(String actual)  {
 	   Assert.assertEquals(logSteps.get_error_message(), actual);
 	}
+	
+	@Then("^Show me message Title \"([^\"]*)\"$")
+	public void show_me_message_Title(String title){
+		Assert.assertEquals(logSteps.get_title(), title);
+	}
+	
+	@Given("^Open company is company$")
+	public void open_company_is_company() {
+		logSteps.open_company_detail();
+	}
 
+	@Then("^Show me \"([^\"]*)\"$")
+	public void show_me_ADDITIONAL_INFORMATION(String addition){
+		Assert.assertEquals(logSteps.get_addition(), addition);
+	}
+
+	@When("^Clicking on Download button$")
+	public void clicking_on_Download_button(){
+	    logSteps.click_download_button();
+	}
+
+	@Then("^Open Test Download (\\d+)k$")
+	public void open_Test_Download_k(int arg1){
+	    logSteps.Open_down_detail_company();
+	}
+
+
+	
 }
+	  
+
+

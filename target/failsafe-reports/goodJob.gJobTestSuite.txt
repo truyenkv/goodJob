@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: goodJob.gJobTestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 4, Skipped: 8, Time elapsed: 731.816 sec <<< FAILURE! - in goodJob.gJobTestSuite
+When I input user name is "admin@yopmail.com"(Scenario: Access Company detail)  Time elapsed: 0 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+Driver info: driver.version: unknown
+
+Scenario: Access Company detail  Time elapsed: 0 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+Driver info: driver.version: unknown
+
+When I input user name is "admin@yopmail.com"(Scenario: Download screen)  Time elapsed: 0.001 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+Driver info: driver.version: unknown
+
+Scenario: Download screen  Time elapsed: 0.001 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+Driver info: driver.version: unknown
+

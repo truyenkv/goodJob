@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="goodJob.gJobTestSuite" time="731.816" tests="14" errors="4" skipped="8" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_74\jre\bin"/>
+    <property name="java.vm.version" value="25.74-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\GitLocal\goodJob"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\GitLocal\goodJob"/>
+    <property name="webdriver.driver" value="chrome"/>
+    <property name="java.runtime.version" value="1.8.0_74-b02"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_74\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\kieuv\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\maven\apache-maven-3.5.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_74\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_74\bin;C:\maven\apache-maven-3.5.0\bin;C:\maven\apache-maven-3.5.0\bin;C:\Gradle\gradle-4.1\bin;C:\Users\kieuv\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\maven\apache-maven-3.5.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\maven\apache-maven-3.5.0\bin\..\lib\jansi-native\windows64"/>
+    <property name="user.home" value="C:\Users\kieuv"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="kieuv"/>
+    <property name="java.class.path" value="C:\maven\apache-maven-3.5.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_74\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test verify -Dwebdriver.driver=chrome -Dwebdriver.chrome.driver=D:\Driver\chromedriver.exe"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_74"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_74\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_74\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_74\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_74\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_74\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_74\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_74\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_74\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_74\jre\classes"/>
+    <property name="webdriver.chrome.driver" value="D:\Driver\chromedriver.exe"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\maven\apache-maven-3.5.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="Given I go to login page" classname="Scenario: Access Company detail" time="0"/>
+  <testcase name="When I input user name is &quot;admin@yopmail.com&quot;" classname="Scenario: Access Company detail" time="0">
+    <error message="Timed out after 30 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-QPURT33B&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_74&apos;&#10;Driver info: driver.version: unknown" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+Driver info: driver.version: unknown
+</error>
+  </testcase>
+  <testcase name="Scenario: Access Company detail" classname="Scenario: Access Company detail" time="0">
+    <error message="Timed out after 30 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-QPURT33B&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_74&apos;&#10;Driver info: driver.version: unknown" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+Driver info: driver.version: unknown
+</error>
+  </testcase>
+  <testcase name="And I input password is &quot;1&quot;" classname="Scenario: Access Company detail" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And I click on Login button" classname="Scenario: Access Company detail" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And Open company is company" classname="Scenario: Access Company detail" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+  Background:                                     &amp#27;[90m# features/UserAction.feature:4&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to login page&amp#27;[0m                      &amp#27;[90m# loginDefinitionTestSuite.i_go_to_login_page()&amp#27;[0m
+    &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI input user name is "&amp#27;[0m&amp#27;[31m&amp#27;[1madmin@yopmail.com&amp#27;[0m&amp#27;[31m"&amp#27;[0m &amp#27;[90m# loginDefinitionTestSuite.i_input_user_name_is(String)&amp#27;[0m
+      &amp#27;[31mnet.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 30 seconds. Element not found
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+      System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+      Driver info: driver.version: unknown
+      	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:151)
+      	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:103)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
+      	at goodJob.pages.loginPage.enterEmail(loginPage.java:38)
+      	at goodJob.steps.loginStep.input_username(loginStep.java:16)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$input_username$5(<generated>)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(<generated>)
+      	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+      	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)
+      	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)
+      	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)
+      	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+      	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.input_username(<generated>)
+      	at goodJob.loginDefinitionTestSuite.i_input_user_name_is(loginDefinitionTestSuite.java:24)
+      	at ?.When I input user name is "admin@yopmail.com"(features/UserAction.feature:6)
+      &amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI input password is "&amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m"&amp#27;[0m                   &amp#27;[90m# loginDefinitionTestSuite.i_input_password_is(String)&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on Login button&amp#27;[0m                   &amp#27;[90m# loginDefinitionTestSuite.I_click_on_Login_button()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Then Show me &quot;SCORING DETAILS&quot;" classname="Scenario: Access Company detail" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Given I go to login page" classname="Scenario: Download screen" time="0"/>
+  <testcase name="When I input user name is &quot;admin@yopmail.com&quot;" classname="Scenario: Download screen" time="0.001">
+    <error message="Timed out after 30 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-QPURT33B&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_74&apos;&#10;Driver info: driver.version: unknown" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+Driver info: driver.version: unknown
+</error>
+  </testcase>
+  <testcase name="Scenario: Download screen" classname="Scenario: Download screen" time="0.001">
+    <error message="Timed out after 30 seconds. Element not found&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;LAPTOP-QPURT33B&apos;, ip: &apos;192.168.1.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_74&apos;&#10;Driver info: driver.version: unknown" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
+Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+Driver info: driver.version: unknown
+</error>
+  </testcase>
+  <testcase name="And I input password is &quot;1&quot;" classname="Scenario: Download screen" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And I click on Login button" classname="Scenario: Download screen" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And Clicking on Download button" classname="Scenario: Download screen" time="0">
+    <skipped/>
+    <system-out><![CDATA[
+  Background:                                     &amp#27;[90m# features/UserAction.feature:4&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to login page&amp#27;[0m                      &amp#27;[90m# loginDefinitionTestSuite.i_go_to_login_page()&amp#27;[0m
+    &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI input user name is "&amp#27;[0m&amp#27;[31m&amp#27;[1madmin@yopmail.com&amp#27;[0m&amp#27;[31m"&amp#27;[0m &amp#27;[90m# loginDefinitionTestSuite.i_input_user_name_is(String)&amp#27;[0m
+      &amp#27;[31mnet.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 30 seconds. Element not found
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+      System info: host: 'LAPTOP-QPURT33B', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_74'
+      Driver info: driver.version: unknown
+      	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:151)
+      	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:103)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+      	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
+      	at goodJob.pages.loginPage.enterEmail(loginPage.java:38)
+      	at goodJob.steps.loginStep.input_username(loginStep.java:16)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$input_username$5(<generated>)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(<generated>)
+      	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+      	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)
+      	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)
+      	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)
+      	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+      	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.input_username(<generated>)
+      	at goodJob.loginDefinitionTestSuite.i_input_user_name_is(loginDefinitionTestSuite.java:24)
+      	at ?.When I input user name is "admin@yopmail.com"(features/UserAction.feature:6)
+      &amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI input password is "&amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m"&amp#27;[0m                   &amp#27;[90m# loginDefinitionTestSuite.i_input_password_is(String)&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click on Login button&amp#27;[0m                   &amp#27;[90m# loginDefinitionTestSuite.I_click_on_Login_button()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Then Open Test Download 50k" classname="Scenario: Download screen" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

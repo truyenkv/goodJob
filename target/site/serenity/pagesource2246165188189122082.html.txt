@@ -1,0 +1,10 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <meta charset="UTF-8" />
+    <title>Good Companies, Good Jobs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="icon" type="image/png" sizes="32x32" href="/icons-d7d5d1ebbdffa57f3dc47310c55b70f5/gj-favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/icons-d7d5d1ebbdffa57f3dc47310c55b70f5/gj-favicon-16x16.png" /><link rel="shortcut icon" href="/icons-d7d5d1ebbdffa57f3dc47310c55b70f5/gj-favicon.ico" /><link href="/vendor.b182c40603485783ed9a68f630b9b590.css?aa60d4becd419b5dc1ca" rel="stylesheet" /><link href="/app.8b6e74796cb32ca22e0ea414d8edf1a3.css?aa60d4becd419b5dc1ca" rel="stylesheet" /></head>
+<body>
+<div id="root"><div data-reactroot="" class="gj-main"><div class="container"><div class="row"><div><form class="login gj-center-block gj-login-block "><div class="gj-login-sign-in-image form-group"><img alt="Logo" src="/assets/images/logo.809dc668205f6879f9f80d43482539f0.svg" class="gj-login-logo img-responsive" /></div><div class="form-group"><label for="inputEmail" class="gj-title-small control-label">Email Address</label><input type="email" value="admin@yopmail.com" id="inputEmail" class="form-control" /></div><div class="form-group"><label for="inputPassword" class="gj-title-small control-label">Password</label><input type="password" value="1" id="inputPassword" class="form-control" /></div><div class="gj-login-forgot-password-button form-group"><button type="button" class="btn btn-link">Forgot Password?</button></div><div class="gj-login-sign-in-button form-group"><button type="submit" class="btn btn-green">Login</button></div></form><!-- react-empty: 18 --></div></div></div><div></div></div></div>
+<script type="text/javascript" src="/vendor.017239e9da486557feab.js?aa60d4becd419b5dc1ca"></script><script type="text/javascript" src="/app.886d88eca494e233c442.js?aa60d4becd419b5dc1ca"></script>
+
+</body></html>

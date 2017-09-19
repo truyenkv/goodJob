@@ -1,3 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Admin do some thing","Access Company detail","ERROR","2017-09-17T09:56:26.900+07:00[Asia/Bangkok]","0.0","366.06"
-"Admin do some thing","Download screen","ERROR","2017-09-17T10:02:33.711+07:00[Asia/Bangkok]","0.0","363.73"
+"Update User Profile","Update Profile","ERROR","2017-09-19T16:22:23.795+07:00[Asia/Bangkok]","0.0","41.49"
+"Admin do some thing","Access Company detail","SUCCESS","2017-09-19T16:23:06.422+07:00[Asia/Bangkok]","0.0","54.13"
+"Admin do some thing","Download screen","ERROR","2017-09-19T16:24:00.876+07:00[Asia/Bangkok]","0.0","42.66"

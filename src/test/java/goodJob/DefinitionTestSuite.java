@@ -1,6 +1,7 @@
 package goodJob;
 
 
+import goodJob.steps.homeStep;
 import goodJob.steps.loginStep;
 import net.thucydides.core.annotations.Steps;
 
@@ -10,10 +11,11 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class loginDefinitionTestSuite {
+public class DefinitionTestSuite {
 	
 	@Steps
 	loginStep logSteps;
+	homeStep homeSteps;
 	@Given("^I go to login page$")
 	public void i_go_to_login_page()  {
 	   logSteps.openUrl();
@@ -62,6 +64,36 @@ public class loginDefinitionTestSuite {
 	@Then("^Open Test Download (\\d+)k$")
 	public void open_Test_Download_k(int arg1){
 	    logSteps.Open_down_detail_company();
+	}
+	
+	@Given("^User login with \"([^\"]*)\" and password is \"([^\"]*)\"$")
+	public void user_login_with_and_password_is(String username, String password)  {
+		logSteps.openUrl();
+		logSteps.input_username(username);
+		logSteps.input_password(password);
+		logSteps.click_Login();		
+	}
+	
+	@Given("^Show User Menu$")
+	public void show_User_Menu(){
+		homeSteps.Show_User_Profile_Menu();
+	}
+
+	@Given("^Open User profile screen$")
+	public void open_User_profile_screen(){
+		homeSteps.Choosing_User_Profile_screen();
+	}
+
+	@Given("^Update User Profile with First Name is \"([^\"]*)\" and Last Name is \"([^\"]*)\"$")
+	public void update_User_Profile(String firstName, String lastName){
+		homeSteps.update_First_Name(firstName);
+		homeSteps.update_Last_Name(lastName);
+		homeSteps.click_On_Save();
+	}
+
+	@Then("^Back to Home Page$")
+	public void back_to_Home_Page(){
+		
 	}
 
 

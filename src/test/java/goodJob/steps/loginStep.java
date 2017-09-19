@@ -54,6 +54,10 @@ public class loginStep extends ScenarioSteps {
 		logPage.open_com_detail();
 		
 	}
+	public void Show_User_Profile_Menu() {
+		
+		
+	}
 	
 
 	

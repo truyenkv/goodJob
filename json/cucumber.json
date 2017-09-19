@@ -11,81 +11,78 @@
         "steps": [
           {
             "result": {
-              "duration": 304691269479,
+              "duration": 40398392648,
               "status": "passed"
             },
             "line": 5,
-            "name": "I go to login page",
-            "match": {
-              "location": "loginDefinitionTestSuite.i_go_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 60731230535,
-              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 30 seconds. Element not found\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027LAPTOP-QPURT33B\u0027, ip: \u0027192.168.1.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_74\u0027\nDriver info: driver.version: unknown\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:151)\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:103)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy23.sendKeys(Unknown Source)\r\n\tat goodJob.pages.loginPage.enterEmail(loginPage.java:38)\r\n\tat goodJob.steps.loginStep.input_username(loginStep.java:16)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$input_username$5(\u003cgenerated\u003e)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.input_username(\u003cgenerated\u003e)\r\n\tat goodJob.loginDefinitionTestSuite.i_input_user_name_is(loginDefinitionTestSuite.java:24)\r\n\tat ✽.When I input user name is \"admin@yopmail.com\"(features/UserAction.feature:6)\r\n",
-              "status": "failed"
-            },
-            "line": 6,
-            "name": "I input user name is \"admin@yopmail.com\"",
+            "name": "User login with \"admin@yopmail.com\" and password is \"1\"",
             "match": {
               "arguments": [
                 {
                   "val": "admin@yopmail.com",
-                  "offset": 22
-                }
-              ],
-              "location": "loginDefinitionTestSuite.i_input_user_name_is(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "I input password is \"1\"",
-            "match": {
-              "arguments": [
+                  "offset": 17
+                },
                 {
                   "val": "1",
-                  "offset": 21
+                  "offset": 53
                 }
               ],
-              "location": "loginDefinitionTestSuite.i_input_password_is(String)"
+              "location": "DefinitionTestSuite.user_login_with_and_password_is(String,String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "I click on Login button",
-            "match": {
-              "location": "loginDefinitionTestSuite.I_click_on_Login_button()"
-            },
-            "keyword": "And "
+            "keyword": "Given "
           }
         ]
       },
       {
-        "line": 11,
-        "name": "Access Company detail",
+        "line": 9,
+        "name": "Update Profile",
         "description": "",
-        "id": "admin-do-some-thing;access-company-detail",
+        "id": "update-user-profile;update-profile",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+              "duration": 499977,
+              "error_message": "java.lang.NullPointerException\r\n\tat goodJob.DefinitionTestSuite.show_User_Menu(DefinitionTestSuite.java:79)\r\n\tat ✽.And Show User Menu(features/UpdateUserProfile.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Show User Menu",
+            "match": {
+              "location": "DefinitionTestSuite.show_User_Menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Open User profile screen",
+            "match": {
+              "location": "DefinitionTestSuite.open_User_profile_screen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
               "status": "skipped"
             },
             "line": 12,
-            "name": "Open company is company",
+            "name": "Update User Profile with First Name is \"First name is Updated\" and Last Name is \"Last name is Updated\"",
             "match": {
-              "location": "loginDefinitionTestSuite.open_company_is_company()"
+              "arguments": [
+                {
+                  "val": "First name is Updated",
+                  "offset": 40
+                },
+                {
+                  "val": "Last name is Updated",
+                  "offset": 81
+                }
+              ],
+              "location": "DefinitionTestSuite.update_User_Profile(String,String)"
             },
             "keyword": "And "
           },
@@ -94,6 +91,81 @@
               "status": "skipped"
             },
             "line": 13,
+            "name": "Back to Home Page",
+            "match": {
+              "location": "DefinitionTestSuite.back_to_Home_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Update User Profile",
+    "description": "",
+    "id": "update-user-profile",
+    "keyword": "Feature",
+    "uri": "features/UpdateUserProfile.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 48199564500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User login with \"admin@yopmail.com\" and password is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@yopmail.com",
+                  "offset": 17
+                },
+                {
+                  "val": "1",
+                  "offset": 53
+                }
+              ],
+              "location": "DefinitionTestSuite.user_login_with_and_password_is(String,String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Access Company detail",
+        "description": "",
+        "id": "admin-do-some-thing;access-company-detail",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3708587602,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Open company is company",
+            "match": {
+              "location": "DefinitionTestSuite.open_company_is_company()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 884108029,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "Show me \"SCORING DETAILS\"",
             "match": {
               "arguments": [
@@ -102,7 +174,7 @@
                   "offset": 9
                 }
               ],
-              "location": "loginDefinitionTestSuite.show_me_ADDITIONAL_INFORMATION(String)"
+              "location": "DefinitionTestSuite.show_me_ADDITIONAL_INFORMATION(String)"
             },
             "keyword": "Then "
           }
@@ -117,67 +189,30 @@
         "steps": [
           {
             "result": {
-              "duration": 302604001995,
+              "duration": 40451862353,
               "status": "passed"
             },
             "line": 5,
-            "name": "I go to login page",
-            "match": {
-              "location": "loginDefinitionTestSuite.i_go_to_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 60606482304,
-              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 30 seconds. Element not found\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027LAPTOP-QPURT33B\u0027, ip: \u0027192.168.1.16\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_74\u0027\nDriver info: driver.version: unknown\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:151)\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:103)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy23.sendKeys(Unknown Source)\r\n\tat goodJob.pages.loginPage.enterEmail(loginPage.java:38)\r\n\tat goodJob.steps.loginStep.input_username(loginStep.java:16)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$input_username$5(\u003cgenerated\u003e)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.input_username(\u003cgenerated\u003e)\r\n\tat goodJob.loginDefinitionTestSuite.i_input_user_name_is(loginDefinitionTestSuite.java:24)\r\n\tat ✽.When I input user name is \"admin@yopmail.com\"(features/UserAction.feature:6)\r\n",
-              "status": "failed"
-            },
-            "line": 6,
-            "name": "I input user name is \"admin@yopmail.com\"",
+            "name": "User login with \"admin@yopmail.com\" and password is \"1\"",
             "match": {
               "arguments": [
                 {
                   "val": "admin@yopmail.com",
-                  "offset": 22
-                }
-              ],
-              "location": "loginDefinitionTestSuite.i_input_user_name_is(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "I input password is \"1\"",
-            "match": {
-              "arguments": [
+                  "offset": 17
+                },
                 {
                   "val": "1",
-                  "offset": 21
+                  "offset": 53
                 }
               ],
-              "location": "loginDefinitionTestSuite.i_input_password_is(String)"
+              "location": "DefinitionTestSuite.user_login_with_and_password_is(String,String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "I click on Login button",
-            "match": {
-              "location": "loginDefinitionTestSuite.I_click_on_Login_button()"
-            },
-            "keyword": "And "
+            "keyword": "Given "
           }
         ]
       },
       {
-        "line": 15,
+        "line": 11,
         "name": "Download screen",
         "description": "",
         "id": "admin-do-some-thing;download-screen",
@@ -186,12 +221,14 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 1669528746,
+              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: unknown error: Element \u003ca href\u003d\"/downloadfilter\"\u003e...\u003c/a\u003e is not clickable at point (760, 41). Other element would receive the click: \u003cdiv class\u003d\"text-center gj-loading-view loading-view-animate-200\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d60.0.3112.113)\n  (Driver info: chromedriver\u003d2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform\u003dWindows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 101 milliseconds\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027KVTRUYEN\u0027, ip: \u0027192.168.210.87\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir\u003dC:\\Users\\kvtruyen\\AppData\\Local\\Temp\\scoped_dir8096_4158}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d60.0.3112.113, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: b726d9509c2cf7badfa4b5f01414387e\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\r\n\tat goodJob.pages.loginPage.open_download_screen(loginPage.java:62)\r\n\tat goodJob.steps.loginStep.click_download_button(loginStep.java:49)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$click_download_button$10(\u003cgenerated\u003e)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)\r\n\tat goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.click_download_button(\u003cgenerated\u003e)\r\n\tat goodJob.DefinitionTestSuite.clicking_on_Download_button(DefinitionTestSuite.java:61)\r\n\tat ✽.And Clicking on Download button(features/UserAction.feature:12)\r\n",
+              "status": "failed"
             },
-            "line": 16,
+            "line": 12,
             "name": "Clicking on Download button",
             "match": {
-              "location": "loginDefinitionTestSuite.clicking_on_Download_button()"
+              "location": "DefinitionTestSuite.clicking_on_Download_button()"
             },
             "keyword": "And "
           },
@@ -199,7 +236,7 @@
             "result": {
               "status": "skipped"
             },
-            "line": 17,
+            "line": 13,
             "name": "Open Test Download 50k",
             "match": {
               "arguments": [
@@ -208,7 +245,7 @@
                   "offset": 19
                 }
               ],
-              "location": "loginDefinitionTestSuite.open_Test_Download_k(int)"
+              "location": "DefinitionTestSuite.open_Test_Download_k(int)"
             },
             "keyword": "Then "
           }

@@ -8,8 +8,5 @@ import org.junit.runner.RunWith;
 //@CucumberOptions(features="src/test/resources/features/")
 //@CucumberOptions(plugin = {"pretty"}, strict = true)
 @CucumberOptions(features = "classpath:features", plugin ={"pretty" ,"json:json/cucumber.json"})
-//@CucumberOptions(plugin = {"pretty"}, strict = true)
-//@CucumberOptions(plugin = {"pretty"}, strict = true)
-//@CucumberOptions(plugin = {"pretty"}, strict = true)
-//@CucumberOptions(plugin = {"pretty"}, strict = true)
+
 public class gJobTestSuite {}

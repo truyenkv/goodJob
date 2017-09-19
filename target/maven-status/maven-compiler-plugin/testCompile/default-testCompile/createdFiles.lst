@@ -1,3 +1,6 @@
+goodJob\DefinitionTestSuite.class
 goodJob\pages\loginPage.class
 goodJob\steps\loginStep.class
 goodJob\gJobTestSuite.class
+goodJob\pages\homePage.class
+goodJob\steps\homeStep.class

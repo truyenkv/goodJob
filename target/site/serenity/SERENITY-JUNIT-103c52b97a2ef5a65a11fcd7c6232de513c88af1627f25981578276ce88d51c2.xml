@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Update User Profile" skipped="0" tests="1" time="41.49" timestamp="2017-09-19T16:22:23.795+07:00[Asia/Bangkok]"><testcase name="Update Profile"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-goodJob.DefinitionTestSuite.show_User_Menu(DefinitionTestSuite.java:79)&#13;
-✽.And Show User Menu(features/UpdateUserProfile.feature:10)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Update User Profile" skipped="0" tests="1" time="1.86" timestamp="2017-09-19T16:48:58.360+07:00[Asia/Bangkok]"><testcase name="Update Profile"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The driver executable is a directory: D:\Driver" type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The driver executable is a directory: D:\Driver</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The driver executable is a directory: D:\Driver&#13;
+goodJob.steps.loginStep.openUrl(loginStep.java:12)&#13;
+goodJob.DefinitionTestSuite.user_login_with_and_password_is(DefinitionTestSuite.java:71)&#13;
 </system-err></testcase></testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="goodJob.gJobTestSuite" time="141.511" tests="14" errors="4" skipped="4" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="goodJob.gJobTestSuite" time="6.539" tests="6" errors="2" skipped="4" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test verify -Dwebdriver.driver=chrome -Dwebdriver.chrome.driver=D:\Driver\chromedriver.exe"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify -Dwebdriver.driver=chrome -Dwebdriver.chrome.driver=D:\Driver"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -54,7 +54,7 @@
     <property name="java.version" value="1.8.0_144"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
-    <property name="webdriver.chrome.driver" value="D:\Driver\chromedriver.exe"/>
+    <property name="webdriver.chrome.driver" value="D:\Driver"/>
     <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\maven\apache-maven-3.5.0\bin\.."/>
@@ -66,18 +66,227 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given User login with &quot;admin@yopmail.com&quot; and password is &quot;1&quot;" classname="Scenario: Update Profile" time="0.002"/>
-  <testcase name="And Show User Menu" classname="Scenario: Update Profile" time="0.006">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+  <testcase name="Given User login with &quot;admin@yopmail.com&quot; and password is &quot;1&quot;" classname="Scenario: Update Profile" time="0.012">
+    <error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+Caused by: net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The driver executable is a directory: D:\Driver
+Caused by: java.lang.IllegalStateException: The driver executable is a directory: D:\Driver
 </error>
+    <system-out><![CDATA[Setting runtime options in createRuntime()
+Feature: Update User Profile
+]]></system-out>
+    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+-------------------------------------------------------------------------------------
+
+[main] INFO net.serenitybdd.core.Serenity - Test Suite Started: Update User Profile
+[main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Update Profile
+-------------------------------------------------------------------(update-user-profile;update-profile)
+[main] ERROR net.thucydides.core.webdriver.WebDriverFacade - FAILED TO CREATE NEW WEBDRIVER_DRIVER INSTANCE class org.openqa.selenium.chrome.ChromeDriver: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The driver executable is a directory: D:\Driver
+net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The driver executable is a directory: D:\Driver
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:135)
+	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:147)
+	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:138)
+	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:108)
+	at net.thucydides.core.webdriver.WebDriverFacade.openIgnoringHtmlUnitScriptErrors(WebDriverFacade.java:183)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:178)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:827)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:737)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:725)
+	at goodJob.steps.loginStep.openUrl(loginStep.java:12)
+	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$openUrl$3(<generated>)
+	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.openUrl(<generated>)
+	at goodJob.DefinitionTestSuite.user_login_with_and_password_is(DefinitionTestSuite.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.IllegalStateException: The driver executable is a directory: D:\Driver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.checkExecutable(DriverServiceExecutable.java:118)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.checkForMissingBinaries(DriverServiceExecutable.java:111)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.asAFile(DriverServiceExecutable.java:98)
+	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.chromeDriverExecutable(ChromeServicePool.java:44)
+	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.newDriverService(ChromeServicePool.java:25)
+	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.newDriverService(ChromeServicePool.java:12)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.driverServiceWithName(DriverServicePool.java:54)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.getDriverService(DriverServicePool.java:45)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.start(DriverServicePool.java:60)
+	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.ensureServiceIsRunning(DriverServicePool.java:86)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.getDriverServicePool(ChromeDriverProvider.java:29)
+	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:48)
+	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:125)
+	... 59 more
+]]></system-err>
+  </testcase>
+  <testcase name="Scenario: Update Profile" classname="Scenario: Update Profile" time="0.014">
+    <error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+Caused by: net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The driver executable is a directory: D:\Driver
+Caused by: java.lang.IllegalStateException: The driver executable is a directory: D:\Driver
+</error>
+  </testcase>
+  <testcase name="And Show User Menu" classname="Scenario: Update Profile" time="0">
+    <skipped/>
     <system-out><![CDATA[
   Background:                                                     &amp#27;[90m# features/UpdateUserProfile.feature:4&amp#27;[0m
-    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser login with "&amp#27;[0m&amp#27;[32m&amp#27;[1madmin@yopmail.com&amp#27;[0m&amp#27;[32m" and password is "&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m"&amp#27;[0m &amp#27;[90m# DefinitionTestSuite.user_login_with_and_password_is(String,String)&amp#27;[0m
+    &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mUser login with "&amp#27;[0m&amp#27;[31m&amp#27;[1madmin@yopmail.com&amp#27;[0m&amp#27;[31m" and password is "&amp#27;[0m&amp#27;[31m&amp#27;[1m1&amp#27;[0m&amp#27;[31m"&amp#27;[0m &amp#27;[90m# DefinitionTestSuite.user_login_with_and_password_is(String,String)&amp#27;[0m
+      &amp#27;[31mnet.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
+      	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:151)
+      	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:138)
+      	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:108)
+      	at net.thucydides.core.webdriver.WebDriverFacade.openIgnoringHtmlUnitScriptErrors(WebDriverFacade.java:183)
+      	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:178)
+      	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:827)
+      	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:737)
+      	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:725)
+      	at goodJob.steps.loginStep.openUrl(loginStep.java:12)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$openUrl$3(<generated>)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(<generated>)
+      	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+      	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)
+      	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)
+      	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)
+      	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+      	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.openUrl(<generated>)
+      	at goodJob.DefinitionTestSuite.user_login_with_and_password_is(DefinitionTestSuite.java:71)
+      	at ?.Given User login with "admin@yopmail.com" and password is "1"(features/UpdateUserProfile.feature:5)
+      Caused by: net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (The driver executable is a directory: D:\Driver
+      	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:135)
+      	at net.thucydides.core.webdriver.WebDriverFacade.newDriverInstance(WebDriverFacade.java:147)
+      	at net.thucydides.core.webdriver.WebDriverFacade.newProxyDriver(WebDriverFacade.java:138)
+      	at net.thucydides.core.webdriver.WebDriverFacade.getProxiedDriver(WebDriverFacade.java:108)
+      	at net.thucydides.core.webdriver.WebDriverFacade.openIgnoringHtmlUnitScriptErrors(WebDriverFacade.java:183)
+      	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:178)
+      	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:827)
+      	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:737)
+      	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:725)
+      	at goodJob.steps.loginStep.openUrl(loginStep.java:12)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.CGLIB$openUrl$3(<generated>)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44$$FastClassByCGLIB$$c7d34c09.invoke(<generated>)
+      	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+      	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)
+      	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)
+      	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)
+      	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
+      	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)
+      	at goodJob.steps.loginStep$$EnhancerByCGLIB$$7936ec44.openUrl(<generated>)
+      	at goodJob.DefinitionTestSuite.user_login_with_and_password_is(DefinitionTestSuite.java:71)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+      	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+      Caused by: java.lang.IllegalStateException: The driver executable is a directory: D:\Driver
+      	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
+      	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.checkExecutable(DriverServiceExecutable.java:118)
+      	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.checkForMissingBinaries(DriverServiceExecutable.java:111)
+      	at net.serenitybdd.core.webdriver.servicepools.DriverServiceExecutable.asAFile(DriverServiceExecutable.java:98)
+      	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.chromeDriverExecutable(ChromeServicePool.java:44)
+      	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.newDriverService(ChromeServicePool.java:25)
+      	at net.serenitybdd.core.webdriver.servicepools.ChromeServicePool.newDriverService(ChromeServicePool.java:12)
+      	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.driverServiceWithName(DriverServicePool.java:54)
+      	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.getDriverService(DriverServicePool.java:45)
+      	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.start(DriverServicePool.java:60)
+      	at net.serenitybdd.core.webdriver.servicepools.DriverServicePool.ensureServiceIsRunning(DriverServicePool.java:86)
+      	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.getDriverServicePool(ChromeDriverProvider.java:29)
+      	at net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider.newInstance(ChromeDriverProvider.java:48)
+      	at net.thucydides.core.webdriver.WebDriverFactory.newWebdriverInstance(WebDriverFactory.java:125)
+      	... 59 more
+      &amp#27;[0m
 ]]></system-out>
-  </testcase>
-  <testcase name="Scenario: Update Profile" classname="Scenario: Update Profile" time="0.006">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-</error>
   </testcase>
   <testcase name="And Open User profile screen" classname="Scenario: Update Profile" time="0">
     <skipped/>
@@ -86,44 +295,6 @@
     <skipped/>
   </testcase>
   <testcase name="Then Back to Home Page" classname="Scenario: Update Profile" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Given User login with &quot;admin@yopmail.com&quot; and password is &quot;1&quot;" classname="Scenario: Access Company detail" time="0"/>
-  <testcase name="And Open company is company" classname="Scenario: Access Company detail" time="0"/>
-  <testcase name="Then Show me &quot;SCORING DETAILS&quot;" classname="Scenario: Access Company detail" time="0"/>
-  <testcase name="Scenario: Access Company detail" classname="Scenario: Access Company detail" time="0.587"/>
-  <testcase name="Given User login with &quot;admin@yopmail.com&quot; and password is &quot;1&quot;" classname="Scenario: Download screen" time="0"/>
-  <testcase name="And Clicking on Download button" classname="Scenario: Download screen" time="0.002">
-    <error message="unknown error: Element &lt;a href=&quot;/downloadfilter&quot;&gt;...&lt;/a&gt; is not clickable at point (760, 41). Other element would receive the click: &lt;div class=&quot;text-center gj-loading-view loading-view-animate-200&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=60.0.3112.113)&#10;  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 101 milliseconds&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;KVTRUYEN&apos;, ip: &apos;192.168.210.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\kvtruyen\AppData\Local\Temp\scoped_dir8096_4158}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]&#10;Session ID: b726d9509c2cf7badfa4b5f01414387e" type="net.serenitybdd.core.exceptions.SerenityManagedException"><![CDATA[net.serenitybdd.core.exceptions.SerenityManagedException: 
-unknown error: Element <a href="/downloadfilter">...</a> is not clickable at point (760, 41). Other element would receive the click: <div class="text-center gj-loading-view loading-view-animate-200">...</div>
-  (Session info: chrome=60.0.3112.113)
-  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 101 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\kvtruyen\AppData\Local\Temp\scoped_dir8096_4158}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: b726d9509c2cf7badfa4b5f01414387e
-]]></error>
-    <system-out><![CDATA[
-  Background:                                                     &amp#27;[90m# features/UserAction.feature:4&amp#27;[0m
-    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser login with "&amp#27;[0m&amp#27;[32m&amp#27;[1madmin@yopmail.com&amp#27;[0m&amp#27;[32m" and password is "&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m"&amp#27;[0m &amp#27;[90m# DefinitionTestSuite.user_login_with_and_password_is(String,String)&amp#27;[0m
-]]></system-out>
-  </testcase>
-  <testcase name="Scenario: Download screen" classname="Scenario: Download screen" time="0.003">
-    <error message="unknown error: Element &lt;a href=&quot;/downloadfilter&quot;&gt;...&lt;/a&gt; is not clickable at point (760, 41). Other element would receive the click: &lt;div class=&quot;text-center gj-loading-view loading-view-animate-200&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=60.0.3112.113)&#10;  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 101 milliseconds&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;KVTRUYEN&apos;, ip: &apos;192.168.210.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\kvtruyen\AppData\Local\Temp\scoped_dir8096_4158}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]&#10;Session ID: b726d9509c2cf7badfa4b5f01414387e" type="net.serenitybdd.core.exceptions.SerenityManagedException"><![CDATA[net.serenitybdd.core.exceptions.SerenityManagedException: 
-unknown error: Element <a href="/downloadfilter">...</a> is not clickable at point (760, 41). Other element would receive the click: <div class="text-center gj-loading-view loading-view-animate-200">...</div>
-  (Session info: chrome=60.0.3112.113)
-  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 101 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\kvtruyen\AppData\Local\Temp\scoped_dir8096_4158}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: b726d9509c2cf7badfa4b5f01414387e
-]]></error>
-  </testcase>
-  <testcase name="Then Open Test Download 50k" classname="Scenario: Download screen" time="0">
     <skipped/>
   </testcase>
 </testsuite>

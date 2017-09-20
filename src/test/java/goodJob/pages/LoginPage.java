@@ -2,16 +2,15 @@ package goodJob.pages;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.pages.WebElementFacade;
 
 import org.openqa.selenium.WebElement;
 
-public class loginPage extends PageObject {
+public class LoginPage extends PageObject {
 
-	@FindBy(id="inputEmail")
-	WebElement emailField;
+	WebElementFacade inputEmail;
 	
-	@FindBy(id="inputPassword")
-	WebElement passField;
+	WebElementFacade inputPassword;
 	
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement loginBtn;
@@ -35,10 +34,10 @@ public class loginPage extends PageObject {
 	WebElement downName;
 	
 	public void enterEmail(String email) {
-		emailField.sendKeys(email);
+		typeInto(inputEmail, email);
 	}
 	public void enterPass(String password) {
-		passField.sendKeys(password);
+		typeInto(inputPassword, password);
 		
 	}
 	public void clickLoginBtn() {

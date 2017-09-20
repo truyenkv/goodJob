@@ -9,4 +9,4 @@ import org.junit.runner.RunWith;
 //@CucumberOptions(plugin = {"pretty"}, strict = true)
 @CucumberOptions(features = "classpath:features", plugin ={"pretty" ,"json:json/cucumber.json"})
 
-public class gJobTestSuite {}
+public class GJobTestSuite {}

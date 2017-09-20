@@ -1,8 +1,9 @@
 package goodJob;
 
 
-import goodJob.steps.homeStep;
-import goodJob.steps.loginStep;
+
+import goodJob.steps.HomeStep;
+import goodJob.steps.LoginStep;
 import net.thucydides.core.annotations.Steps;
 
 import org.junit.Assert;
@@ -10,14 +11,14 @@ import org.junit.Assert;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
 public class DefinitionTestSuite {
 	
 	@Steps
-	loginStep logSteps;
+	LoginStep logSteps;
 	
 	@Steps 
-	homeStep homeSteps;
+	HomeStep homeSteps;
+	
 	@Given("^I go to login page$")
 	public void i_go_to_login_page()  {
 	   logSteps.openUrl();

@@ -1,6 +1,6 @@
-D:\GitHub\goodJob\src\test\java\goodJob\gJobTestSuite.java
-D:\GitHub\goodJob\src\test\java\goodJob\pages\homePage.java
+D:\GitHub\goodJob\src\test\java\goodJob\GJobTestSuite.java
+D:\GitHub\goodJob\src\test\java\goodJob\pages\HomePage.java
 D:\GitHub\goodJob\src\test\java\goodJob\DefinitionTestSuite.java
-D:\GitHub\goodJob\src\test\java\goodJob\pages\loginPage.java
-D:\GitHub\goodJob\src\test\java\goodJob\steps\loginStep.java
-D:\GitHub\goodJob\src\test\java\goodJob\steps\homeStep.java
+D:\GitHub\goodJob\src\test\java\goodJob\pages\LoginPage.java
+D:\GitHub\goodJob\src\test\java\goodJob\steps\LoginStep.java
+D:\GitHub\goodJob\src\test\java\goodJob\steps\HomeStep.java

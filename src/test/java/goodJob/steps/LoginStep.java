@@ -1,12 +1,12 @@
 package goodJob.steps;
 
-import goodJob.pages.loginPage;
+import goodJob.pages.LoginPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
-public class loginStep extends ScenarioSteps {
+public class LoginStep extends ScenarioSteps {
 	
-	loginPage logPage;
+	LoginPage logPage;
 	@Step
 	public void openUrl() {
 		logPage.open();

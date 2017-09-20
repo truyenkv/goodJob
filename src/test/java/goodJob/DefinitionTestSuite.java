@@ -15,6 +15,8 @@ public class DefinitionTestSuite {
 	
 	@Steps
 	loginStep logSteps;
+	
+	@Steps 
 	homeStep homeSteps;
 	@Given("^I go to login page$")
 	public void i_go_to_login_page()  {

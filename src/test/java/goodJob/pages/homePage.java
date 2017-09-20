@@ -4,19 +4,20 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class homePage extends PageObject{
 
 	@FindBy(xpath="//*[@id='basic-nav-dropdown']")
 	WebElement userIcon;
 	
-	@FindBy(xpath="//a[@href='/userprofile']")
+	@FindBy(xpath="//*[@id='menuCollapse']//a[@href='/userprofile']")
 	WebElement userProfile;
 	
-	@FindBy(xpath="//*[@id='formControlsFirstName']")
+	@FindBy(id="formControlsFirstName")
 	WebElement firstNameTxt;
 	
-	@FindBy(xpath="//*[@id='formControlsLastName']")
+	@FindBy(id="formControlsLastName")
 	WebElement lastNameTxt;
 	
 	@FindBy(xpath="//button[@type='button']")
@@ -26,7 +27,9 @@ public class homePage extends PageObject{
 		userIcon.click();
 	}
 	public void open_Update_Profile_screen() {
-		userProfile.click();
+		Actions action = new Actions(getDriver());
+		action.moveToElement(userProfile).click().perform();
+		//userProfile.click();
 	}
 	public void clear_First_Name() {
 		firstNameTxt.clear();

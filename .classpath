@@ -7,7 +7,7 @@
   <classpathentry kind="var" path="M2_REPO/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
   <classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
   <classpathentry kind="var" path="M2_REPO/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar"/>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="var" path="M2_REPO/net/serenity-bdd/serenity-core/1.5.3/serenity-core-1.5.3.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/21.0/guava-21.0.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/google/inject/guice/4.1.0/guice-4.1.0.jar"/>

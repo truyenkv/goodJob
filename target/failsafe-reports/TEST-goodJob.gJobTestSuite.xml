@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="goodJob.GJobTestSuite" time="147.76" tests="6" errors="2" skipped="2" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="goodJob.GJobTestSuite" time="56.289" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -66,28 +66,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given User login with &quot;admin@yopmail.com&quot; and password is &quot;1&quot;" classname="Scenario: Update Profile" time="0.006"/>
+  <testcase name="Given User login with &quot;admin@yopmail.com&quot; and password is &quot;1&quot;" classname="Scenario: Update Profile" time="0.002"/>
   <testcase name="And Show User Menu" classname="Scenario: Update Profile" time="0"/>
-  <testcase name="And Open User profile screen" classname="Scenario: Update Profile" time="0.012">
-    <error message="Timed out after 100 seconds. Element not available&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;KVTRUYEN&apos;, ip: &apos;192.168.210.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: driver.version: unknown" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
-Timed out after 100 seconds. Element not available
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown
-</error>
-  </testcase>
-  <testcase name="Scenario: Update Profile" classname="Scenario: Update Profile" time="0.012">
-    <error message="Timed out after 100 seconds. Element not available&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;KVTRUYEN&apos;, ip: &apos;192.168.210.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: driver.version: unknown" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
-Timed out after 100 seconds. Element not available
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown
-</error>
-  </testcase>
-  <testcase name="And Update User Profile with First Name is &quot;First name is Updated&quot; and Last Name is &quot;Last name is Updated&quot;" classname="Scenario: Update Profile" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Then Back to Home Page" classname="Scenario: Update Profile" time="0">
-    <skipped/>
-  </testcase>
+  <testcase name="And Open User profile screen" classname="Scenario: Update Profile" time="0"/>
+  <testcase name="And Update User Profile with First Name is &quot;First name is Updated&quot; and Last Name is &quot;Last name is Updated&quot;" classname="Scenario: Update Profile" time="0.001"/>
+  <testcase name="Then Back to Home Page" classname="Scenario: Update Profile" time="0"/>
+  <testcase name="Scenario: Update Profile" classname="Scenario: Update Profile" time="1.883"/>
 </testsuite>

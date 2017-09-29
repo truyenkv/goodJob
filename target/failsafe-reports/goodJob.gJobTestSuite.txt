@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: goodJob.GJobTestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 147.76 sec <<< FAILURE! - in goodJob.GJobTestSuite
-And Open User profile screen(Scenario: Update Profile)  Time elapsed: 0.012 sec  <<< ERROR!
-net.serenitybdd.core.exceptions.SerenityManagedException: 
-Timed out after 100 seconds. Element not available
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown
-
-Scenario: Update Profile  Time elapsed: 0.012 sec  <<< ERROR!
-net.serenitybdd.core.exceptions.SerenityManagedException: 
-Timed out after 100 seconds. Element not available
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.289 sec - in goodJob.GJobTestSuite

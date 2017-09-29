@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Update User Profile" skipped="0" tests="1" time="144.32" timestamp="2017-09-20T18:06:13.673+07:00[Asia/Bangkok]"><testcase name="Update Profile"><error message="Timed out after 100 seconds. Element not available&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException">Timed out after 100 seconds. Element not available
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown</error><system-err>Timed out after 100 seconds. Element not available
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'KVTRUYEN', ip: '192.168.210.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown&#13;
-goodJob.pages.HomePage.open_Update_Profile_screen(HomePage.java:35)&#13;
-goodJob.steps.HomeStep.Choosing_User_Profile_screen(HomeStep.java:16)&#13;
-goodJob.DefinitionTestSuite.open_User_profile_screen(DefinitionTestSuite.java:87)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Update User Profile" skipped="0" tests="1" time="53.59" timestamp="2017-09-29T13:38:02.749+07:00[Asia/Bangkok]"><testcase name="Update Profile"/></testsuite>

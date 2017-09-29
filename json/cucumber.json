@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 40520886420,
+              "duration": 41759000046,
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +43,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1518624147,
+              "duration": 3814521294,
               "status": "passed"
             },
             "line": 9,
@@ -55,9 +55,8 @@
           },
           {
             "result": {
-              "duration": 100804619714,
-              "error_message": "net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 100 seconds. Element not available\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027KVTRUYEN\u0027, ip: \u0027192.168.210.87\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: driver.version: unknown\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:148)\r\n\tat net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:103)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy23.getCoordinates(Unknown Source)\r\n\tat org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:67)\r\n\tat org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)\r\n\tat org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:634)\r\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:593)\r\n\tat goodJob.pages.HomePage.open_Update_Profile_screen(HomePage.java:35)\r\n\tat goodJob.steps.HomeStep.Choosing_User_Profile_screen(HomeStep.java:16)\r\n\tat goodJob.steps.HomeStep$$EnhancerByCGLIB$$881d9624.CGLIB$Choosing_User_Profile_screen$1(\u003cgenerated\u003e)\r\n\tat goodJob.steps.HomeStep$$EnhancerByCGLIB$$881d9624$$FastClassByCGLIB$$1c265a78.invoke(\u003cgenerated\u003e)\r\n\tat net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)\r\n\tat net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:395)\r\n\tat net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:380)\r\n\tat net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:355)\r\n\tat net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)\r\n\tat net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:61)\r\n\tat goodJob.steps.HomeStep$$EnhancerByCGLIB$$881d9624.Choosing_User_Profile_screen(\u003cgenerated\u003e)\r\n\tat goodJob.DefinitionTestSuite.open_User_profile_screen(DefinitionTestSuite.java:87)\r\n\tat ✽.And Open User profile screen(features/UpdateUserProfile.feature:10)\r\n",
-              "status": "failed"
+              "duration": 2501774361,
+              "status": "passed"
             },
             "line": 10,
             "name": "Open User profile screen",
@@ -68,7 +67,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2926875918,
+              "status": "passed"
             },
             "line": 11,
             "name": "Update User Profile with First Name is \"First name is Updated\" and Last Name is \"Last name is Updated\"",
@@ -89,7 +89,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 19183,
+              "status": "passed"
             },
             "line": 12,
             "name": "Back to Home Page",

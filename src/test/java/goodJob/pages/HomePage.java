@@ -11,15 +11,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class HomePage extends PageObject{
 
 	@FindBy(id="basic-nav-dropdown")
-	WebElement userIcon;
+	WebElementFacade userIcon;
+	
+	@FindBy(className="gj-title-text")
+	WebElementFacade authen;
 	
 	@FindBy(xpath=".//img[@alt='Logo'][@src='/assets/images/logo.809dc668205f6879f9f80d43482539f0.svg']")
-	WebElement logo;
+	WebElementFacade logo;
 	
 	@FindBy(xpath="//*[@id='menuCollapse']//a[@href='/userprofile']")
-	WebElement userProfile;
+	WebElementFacade userProfile;
 	
-	@FindBy(xpath="//button[@type='button']")
+	@FindBy(xpath="//button[contains(text(),'Save')]")
 	WebElement saveBtn;
 	
 	WebElementFacade formControlsFirstName;
@@ -27,9 +30,11 @@ public class HomePage extends PageObject{
 		
 	
 	public void click_On_User() {
-		WebDriverWait wait = new WebDriverWait(getDriver(), 10000);
-		wait.until(ExpectedConditions.visibilityOf(logo));
+//		WebDriverWait wait = new WebDriverWait(getDriver(), 10000);
+//		wait.until(ExpectedConditions.visibilityOf(logo));
+		waitForAllTextToAppear("Authorized Companies");
 		userIcon.click();
+		
 	}
 	public void open_Update_Profile_screen() {
 		withAction().moveToElement(userProfile).click().perform();
